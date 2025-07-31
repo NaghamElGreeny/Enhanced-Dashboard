@@ -1,0 +1,106 @@
+
+  input,
+  textarea,
+  .ant-select,
+  .ant-input-password,
+  .ant-picker,
+  .ant-otp-input,
+  .ant-input,
+  .ant-input-outlined {
+    @apply h-[52px] w-full rounded-xl border-2 border-primary/10 bg-body text-text placeholder:text-text focus:border-primary/10 hover:border-primary/10 hover:bg-body dark:bg-dark;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: theme("colors.text") !important;
+    background-color: theme("colors.body") !important;
+  }
+
+  // Just in case
+  input[data-autocompleted] {
+    background-color: transparent !important;
+  }
+  
+  }
+
+  textarea {
+    @apply h-[120px] !important;
+  }
+
+  .ant-input-password .ant-input {
+    @apply h-[42px];
+  }
+
+  .ant-input-number,
+  .ant-input-number-affix-wrapper,
+  .ant-picker,
+  .ant-input {
+    @apply w-full;
+  }
+
+  label {
+    @apply w-full font-semibold text-text max-md:text-sm !important;
+  }
+
+  .ant-select-multiple .ant-select-selection-wrap {
+    align-self: center;
+  }
+
+  .full-modal-btn * {
+    @apply w-full;
+  }
+
+  .ant-otp {
+    @apply gap-4;
+
+    .ant-otp-input {
+      @apply size-[59px] !important;
+    }
+  }
+
+  .ant-input-number-input {
+    @apply h-full;
+  }
+
+  .ant-radio-group {
+    @apply flex w-full items-center gap-2;
+
+    .ant-radio-button-wrapper {
+      @apply flex flex-1 items-center justify-center min-h-11 rounded-xl border border-border before:hidden hover:text-primary;
+
+      &.ant-radio-button-wrapper-checked {
+        @apply border-primary text-primary !important;
+      }
+    }
+  }
+
+  .name-inputs-wrapper {
+    @apply relative;
+
+    .btns-wrapper {
+      @apply absolute -top-1 end-0 z-10 flex items-center gap-2 rounded-t-xl bg-body p-1.5;
+
+      span {
+        @apply min-w-10 cursor-pointer rounded-xl px-4 py-1 text-xs font-bold;
+      }
+    }
+  }
+
+  .ant-upload-list {
+    @apply justify-center;
+  }
+
+  .ant-upload {
+    @apply rounded-sm border-border bg-body text-text !important;
+  }
+
+  .ant-input-password-icon {
+    @apply text-text !important;
+  }
+
+
+:where(.css-dev-only-do-not-override-7t2xvq).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled) {
+  @apply bg-body border border-red-500 border-solid !important;
+}
