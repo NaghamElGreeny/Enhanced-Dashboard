@@ -8,6 +8,24 @@ This is a modern, high-performance dashboard starter template built with the lat
 * 🎿 [Redux Toolkit](https://redux-toolkit.js.org/) for state management
 * 🧠 [TanStack Query (React Query)](https://tanstack.com/query/latest) for server state management
 
+✨ Added Features
+
+- Interactive charts using echarts-for-react.
+
+- Custom Theme: Extended and enhanced from the base theme system.
+
+- Excel export using exceljs.
+
+- AppSelect: Flexible list component that supports static and dynamic (API) data.
+
+- Settings Tabs: Organized and intuitive user settings sections.
+
+- Text Editor: Rich text editing powered by tiptap.
+
+- Role-based access control (RBAC) – coming soon.
+
+- Internet & Server Error Pages: Graceful fallback UI for connectivity/server issues.
+
 ## 📂 Project Structure (Page-Based + SOLID Principles)
 
 This project uses a **page-based folder structure** to organize code by features and follow **SOLID principles**. This means:
@@ -98,8 +116,8 @@ createEntityRoutes('myEntity')
 ## 📦 Getting Started
 
 ```bash
-npm install
-npm run dev
+pnpm install 
+pnpm dev
 ```
 
 ## ✅ Linting and Formatting
@@ -107,7 +125,7 @@ npm run dev
 We use `eslint`, `prettier`, and strict TypeScript checks. Run:
 
 ```bash
-npm run lint
+pnpm lint
 ```
 
 ## 👥 Contributing Guidelines
