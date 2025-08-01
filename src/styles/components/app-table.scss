@@ -13,7 +13,7 @@
     @apply overflow-x-auto p-2;
   }
   .ant-table-content {
-    @apply p-6 bg-white dark:bg-dark rounded-[35px] shadow-box border border-primary/20 min-w-fit;
+    @apply p-6 bg-body/20 dark:bg-dark rounded-[35px] shadow-box border border-primary/20 min-w-fit;
   }
   td,
   th {
