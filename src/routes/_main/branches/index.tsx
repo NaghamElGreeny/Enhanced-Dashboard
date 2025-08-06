@@ -12,6 +12,7 @@ import MainPageWrapper, {
 import { RouterContext } from "@/main";
 import axiosInstance from "@/services/instance";
 import { useSuspenseQuery } from "@tanstack/react-query";
+import type { TableProps } from "antd";
 
 export const Route = createFileRoute("/_main/branches/")({
   component: Branches,
@@ -36,7 +37,7 @@ export const Route = createFileRoute("/_main/branches/")({
    
   },
 });
-function Branches() {
+function Branches()  {
   const currentSearchParams = Route.useSearch();
   const endpoint = `awards?page=${currentSearchParams.page}`;
   const { data } = useSuspenseQuery({
@@ -53,7 +54,14 @@ function Branches() {
   const [refetchKey, setRefetchKey] = useState(0);
   const router = useNavigate();
 
-  const columns = [
+  type Branch = {
+    id: number;
+    image: string;
+    title: string;
+    // add other fields as needed
+  };
+
+  const columns : TableProps<Branch>["columns"]= [
     {
       title: "#",
       dataIndex: "id",
