@@ -49,7 +49,7 @@ axiosInstance.interceptors.response.use(
       case 401:
         console.error('Unauthorized:', status);
         logOut();
-        window.location.replace('/login');
+        window.location.replace('auth/login');
         break;
       case 404:
         console.error('Not Found:', status);
