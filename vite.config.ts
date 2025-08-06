@@ -23,3 +23,4 @@ export default defineConfig({
         host: '0.0.0.0',
     },
 });
+console.log("Using vite.config.ts");

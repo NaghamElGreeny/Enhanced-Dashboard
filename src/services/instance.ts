@@ -49,6 +49,7 @@ axiosInstance.interceptors.response.use(
       case 401:
         console.error('Unauthorized:', status);
         logOut();
+        console.log('rr log');
         window.location.replace('auth/login');
         break;
       case 404:
